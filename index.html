@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tower of Hanoi game">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" type="module" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <title>Tower of Hanoi</title>
+</head>
+<body>
+    <header>
+        <h1>Tower of Hanoi</h1>
+        <br>
+        <h2 id="win"></h2>
+    </header>
+    
+    <main class="container" id="main">
+        
+        <select id="level">
+            <option value="7">Select Level</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+
+        <h2 id="min-moves">Minimum Moves: </h2>
+
+        <button class="btn" id="solve">Solve</button>
+
+        <div class="dropzone" id="droptarget1">
+            <div class="pole" id="pole-one"></div>
+            <div class="middle" id="middle-one"></div>
+        </div>
+
+        <div class="dropzone" id="droptarget2">
+            <div class="pole" id="pole-two"></div>
+            <div class="middle" id="middle-two"></div>
+        </div>
+
+        <div class="dropzone" id="droptarget3">
+            <div class="pole" id="pole-three"></div>
+            <div class="middle" id="middle-three"></div>
+        </div>
+
+
+    </main>
+
+</body>
+</html>
